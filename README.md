@@ -2,7 +2,7 @@
 
 Illuminate your world with a Flutter app that turns your device torch light ON/OFF using an awesome string/rope interface.
 
-<img src="screenshots/cover.jpg" alt="Banner">
+[<img src="screenshots/cover.jpg" alt="Banner">](https://youtu.be/PCSRbje3Dgc)
 
 ## Description
 
