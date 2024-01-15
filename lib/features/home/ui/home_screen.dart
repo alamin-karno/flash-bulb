@@ -21,6 +21,8 @@ class _HomeScreenState extends State<HomeScreen>
 
   Ticker? _ticker;
 
+  final audioPlayer = AudioPlayer();
+
   late SpringSimulation _springSimX;
   late SpringSimulation _springSimY;
   final _springDescription = const SpringDescription(
@@ -45,10 +47,7 @@ class _HomeScreenState extends State<HomeScreen>
 
     setState(() {
       if (thumbOffset.dy >= 0.0) {
-        if (kDebugMode) {
-          print("${thumbOffset.dy}");
-        }
-        isLightON != false ? torchLightOFF() : torchLightON();
+        isLightON ? torchLightOFF() : torchLightON();
         isLightON = !isLightON;
         playAudio();
       }
@@ -96,9 +95,6 @@ class _HomeScreenState extends State<HomeScreen>
   Future<void> torchLightON() async {
     try {
       await TorchLight.enableTorch();
-      if (kDebugMode) {
-        print("Turn On");
-      }
     } catch (e) {
       if (kDebugMode) {
         print("Error: $e");
@@ -109,9 +105,6 @@ class _HomeScreenState extends State<HomeScreen>
   Future<void> torchLightOFF() async {
     try {
       await TorchLight.disableTorch();
-      if (kDebugMode) {
-        print("Turn Off");
-      }
     } catch (e) {
       if (kDebugMode) {
         print("Error: $e");
@@ -123,7 +116,14 @@ class _HomeScreenState extends State<HomeScreen>
     if (kDebugMode) {
       print("music played");
     }
-    await AudioPlayer().play(DeviceFileSource(AppAudios.clickMP3));
+
+    await audioPlayer.play(AssetSource(AppAudios.clickMP3));
+  }
+
+  @override
+  void dispose() {
+    audioPlayer.dispose();
+    super.dispose();
   }
 
   @override
