@@ -2,6 +2,8 @@
 
 Illuminate your world with a Flutter app that turns your device torch light ON/OFF using an awesome string/rope interface.
 
+<img src="screenshots/cover.jpg" alt="Banner">
+
 ## Description
 
 Introducing 'Flash Bulb'—your go-to app for illuminating moments with stunning animations. Features include seamless ON/OFF control of device flash, enhanced by captivating animations for a truly immersive experience. Illuminate your world in style with Flash Bulb! 🔦✨
