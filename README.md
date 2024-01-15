@@ -28,9 +28,9 @@ Introducing 'Flash Bulb'—your go-to app for illuminating moments with stunning
 - Code using Flutter with ❤️ by [Md. Al-Amin](https://github.com/alamin-karno)
 
 ## Animation (GIF):
-|                           Flash Bulb App (GIF)                            |                          Flash Bulb (ON)                           |                          Flash Bulb (OFF)                          |
-|:-------------------------------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|
-| <img src="screenshots/Screen_recording_20240115_124129.webm" width="250"> | <img src="screenshots/Screenshot_20240115_124059.png" width="250"> | <img src="screenshots/Screenshot_20240115_124042.png" width="250"> |
+|                Flash Bulb App (GIF)                |                          Flash Bulb (ON)                           |                          Flash Bulb (OFF)                          |
+|:--------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|
+| <img src="screenshots/flash_bulb.gif" width="250"> | <img src="screenshots/Screenshot_20240115_124059.png" width="250"> | <img src="screenshots/Screenshot_20240115_124042.png" width="250"> |
 
 
 ### Repository Owner Info
